@@ -21,8 +21,56 @@
 
 // console.log(sujongInfo, console);
 
-function sayHello(name){
-    console.log("Hello!", name);
+// function sayHello(name){
+//     console.log("Hello!", name);
+// }
+
+// sayHello("Sujong");
+
+// function sayHello(name, age){
+//     console.log(`Hello ${name}! you are ${age} years old`);
+// }
+
+// sayHello("Sujong", 27)
+
+// function sayHello(name, age){
+//     return `Hello ${name}! you are ${age} years old`;
+// }
+
+// const greetSujong = sayHello("Sujong", 27);
+
+// console.log(greetSujong);
+
+// const calculator = {
+//     plus: function(a, b){
+//         return a + b;
+//     }
+// }
+
+// const plus = calculator.plus(5, 3);
+// console.log(plus);
+
+// const title = document.getElementById("title");
+// console.log(title); //DOM: document object module
+// title.innerHTML = "Hi! I'm from JavaScript!";
+// console.dir(title)
+// title.style.color = 'red'
+
+// const title = document.getElementById("title");
+
+// function handleResize(event){
+//     console.log(event);
+//     console.log("I have been resized");
+// }
+// document.title = "I own you."; //changes the name of the tab
+
+// window.addEventListener("resize", handleResize); // calls handleResize when it's called even without inputs
+// // window.addEventListener("resize", handleResize()); // calls handleResize function directly
+
+const title = document.getElementById("title");
+
+function handleClick(){
+    title.style.color = "blue";
 }
 
-sayHello("Sujong");
+title.addEventListener("click", handleClick)
