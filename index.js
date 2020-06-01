@@ -10,11 +10,19 @@
 // console.log(b, a);
 // console.log(what);
 // const bool = true;
-const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-//camel case
-console.log(daysOfWeek[0]);
+// const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+// //camel case
+// console.log(daysOfWeek[0]);
 
-const sujongInfo = {name: "Sujong", age: "27", language: ["JavaScript", "C++"]};
-console.log(sujongInfo.language);
-sujongInfo.language = "Python";
-console.log(sujongInfo.language);
+// const sujongInfo = {name: "Sujong", age: "27", language: ["JavaScript", "C++"]};
+// console.log(sujongInfo.language);
+// sujongInfo.language = "Python";
+// console.log(sujongInfo.language);
+
+// console.log(sujongInfo, console);
+
+function sayHello(name){
+    console.log("Hello!", name);
+}
+
+sayHello("Sujong");
