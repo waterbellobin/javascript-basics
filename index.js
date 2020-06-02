@@ -67,10 +67,56 @@
 // window.addEventListener("resize", handleResize); // calls handleResize when it's called even without inputs
 // // window.addEventListener("resize", handleResize()); // calls handleResize function directly
 
-const title = document.getElementById("title");
+// const title = document.getElementById("title");
 
-function handleClick(){
-    title.style.color = "blue";
+// function handleClick(){
+//     title.style.color = "blue";
+// }
+
+// title.addEventListener("click", handleClick)
+
+// if (10 === 5){
+//     console.log("hi"); /// note that the equal sign is 3 times repeated
+// } else if ('10' === 10 && '10' === '10'){
+//     console.log("ho");
+// } else if ('10' === 10 || '10' === '10'){
+//     console.log("he");
+// } else{
+//     console.log("ha");
+// }
+
+// const age = prompt("How old are you?");
+// console.log(age);
+
+// const title = document.querySelector("#title");
+
+// const BASE_COLOR = "white";
+// const OTHER_COLOR = "blue";
+
+// function handleClick(){
+//     const currentColor = title.style.color;
+//     if (currentColor === BASE_COLOR){
+//         title.style.color = OTHER_COLOR;
+//     } else{
+//         title.style.color = BASE_COLOR;
+//     }
+// }
+
+// function init(){
+//     title.style.color = BASE_COLOR;
+//     title.addEventListener("mouseenter", handleClick);
+// }
+
+// init();
+
+function handleOffline(){
+    console.log("See you later!");
 }
 
-title.addEventListener("click", handleClick)
+function handleOnline(){
+    console.log("Welcome!");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline); // checks online/offline status
+
