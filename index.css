@@ -2,6 +2,10 @@ body{
     background-color: black;
 }
 
+.btn{
+    cursor: pointer;
+}
+
 h1{
     color:white;
     transition: color 2s ease-in-out;
