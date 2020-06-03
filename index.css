@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: blue;
 }
 
 .btn{
@@ -12,5 +12,14 @@ h1{
 }
 
 .clicked{
-    color:blue;
+    color:red;
+}
+
+.form,
+.greeting {
+    display:none;
+}
+
+.showing{
+    display:block;
 }
