@@ -4,11 +4,16 @@ const form = document.querySelector(".js-form"),
 const USER_STORAGE = "currentUser",
     SHOWING_CLASS_NAME = "showing";
 
+function saveName(text){
+    localStorage.setItem(USER_STORAGE, text);
+}
+
 function handleSubmit(event){
     event.preventDefault();
     const currentValue = input.value;
     //console.log(currentValue);
     paintGreeting(currentValue);
+    saveName(currentValue);
 }
 function paintGreeting(text){
     form.classList.remove(SHOWING_CLASS_NAME);
