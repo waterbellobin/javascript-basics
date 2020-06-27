@@ -4,7 +4,7 @@ const IMG_NUM = 3;
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `/Users/Sujong/Desktop/sujong/javascript_ws/images/${imgNumber + 1}.jpg`;
+    image.src = `/Users/sujongkim/Desktop/Sujong/src/javascript-basics/images/${imgNumber + 1}.jpg`;
     image.classList.add("bgImage");
     body.prepend(image);
 }
